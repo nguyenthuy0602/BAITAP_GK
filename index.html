@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <script src="./js.bootstrap.min.js"></script>
+    <script src="./js.jquery.min.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body onload="showFood()">
+    <div class="container">
+      <h2>Thêm món ăn</h2>
+      <div class="form">
+        <input type="text" id="foodName" placeholder="Tên món ăn" />
+        <input type="text" id="foodImage" placeholder="URL món ăn" />
+        <input type="text" id="foodMadeIn" placeholder="Xuất xứ" />
+        <input type="text" id="foodPrice" placeholder="Giá" />
+        <br />
+        <input type="button" value="Thêm món ăn" onclick="createFood()" />
+        <input type="button" value="Xoá" onclick="deleteContent()" />
+      </div>
+
+      <h1>Món ăn</h1>
+      <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th>STT</th>
+            <th>Tên món ăn</th>
+            <th>Hình ảnh</th>
+            <th>Xuất xứ</th>
+            <th>Giá</th>
+            <th>Thao tác</th>
+          </tr>
+        </thead>
+
+        <tbody id="tbl"></tbody>
+      </table>
+
+      <div id="overlay" onclick="closeEditForm()"></div>
+      <div id="editForm" style="display: none">
+        <h2>Sửa món ăn</h2>
+        <input type="text" id="editFoodName" placeholder="Tên món ăn" />
+        <input type="text" id="editFoodImage" placeholder="URL món ăn" />
+        <input type="text" id="editFoodMadeIn" placeholder="Xuất xứ" />
+        <input type="text" id="editFoodPrice" placeholder="Giá" />
+        <br />
+        <input type="button" value="Update Product" onclick="updateFood()" />
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>

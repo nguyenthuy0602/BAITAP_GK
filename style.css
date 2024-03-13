@@ -1,0 +1,145 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(145deg, #d7d4c7, #f6ee05);
+}
+
+.container {
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h2 {
+  color: #ed1212;
+  font-size: 30px;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  max-width: 600px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #08b8cb;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+input[type="button"] {
+  padding: 10px 20px;
+  background-color: #c53434;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="button"]:hover {
+  background-color: #3abe58;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.card {
+  width: 30%;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(201, 187, 105, 0.1);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card-text {
+  margin: 5px 0;
+}
+
+.card-buttons button {
+  padding: 5px 10px;
+  background-color: #2a2a2a;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.card-buttons button:hover {
+  background-color: #5792d2;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th,
+table td {
+  padding: 10px;
+  border: 1px solid #062846;
+  text-align: center;
+}
+
+thead {
+  background-color: #8e8b09;
+  color: #fff;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+tbody tr:hover {
+  background-color: #ffffff;
+}
+.form {
+  border: 2px solid black;
+  padding: 20px;
+  background-image: url("https://cbs-xaydung.vn/wp-content/uploads/thiet-ke-thi-cong-nha-hang-background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+  padding: 20px;
+}
+#overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+#editForm {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 2px solid black;
+  z-index: 1000;
+}
